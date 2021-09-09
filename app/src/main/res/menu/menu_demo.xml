@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Setting"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_share"
+        android:orderInCategory="1"
+        android:title="Share" />
+    <item
+        android:id="@+id/menu_search"
+        android:orderInCategory="2"
+        android:title="Search" />
+    <item
+        android:id="@+id/menu_contact"
+        android:orderInCategory="3"
+        android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/menu_contact_phone_number"
+                android:orderInCategory="1"
+                android:title="Phone Number" />
+            <item
+                android:id="@+id/menu_contact_email"
+                android:orderInCategory="2"
+                android:title="Email" />
+        </menu>
+    </item>
+</menu>
